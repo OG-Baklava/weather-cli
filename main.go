@@ -26,7 +26,7 @@ func main() {
     var city string
     fmt.Scanln(&city)
 
-    apiKey := "YOUR_API_KEY_HERE" // Use your actual OpenWeatherMap API key
+    apiKey := "1688937acc8011074471a3301535b2ca"
     url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/weather?q=%s&appid=%s&units=metric", city, apiKey)
 
     resp, err := http.Get(url)
